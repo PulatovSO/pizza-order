@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="styles/style.css">
     <title>Pizza</title>
 </head>
@@ -17,7 +18,23 @@
 
         <div class="cart">
             <h2 class="title">your cart</h2>
-            <ul class="cart__list"></ul>
+            <ul class="cart__list">
+                <!-- <button class="cart__del"><i class='bx bxs-trash-alt'></i></button> -->
+            </ul>
+            <div class="price">
+                <div class="wrap">
+                    <p class="price__title">subtotal: </p>
+                    <p class="price__amount subtotal">0</p><span class="dollar__sign">$</span>
+                </div>
+                <div class="wrap">
+                    <p class="price__title">tax: </p>
+                    <p class="price__amount tax"> 0</p><span class="dollar__sign">$</span>
+                </div>
+                <div class="wrap">
+                    <p class="price__title">total: </p>
+                    <p class="price__amount total"> 0</p><span class="dollar__sign">$</span>
+                </div>
+            </div>
         </div>
 
         <template id="pizza-item-template">
